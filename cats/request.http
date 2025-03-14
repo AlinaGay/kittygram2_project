@@ -87,9 +87,9 @@ Content-Type: application/json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQyMDU1ODk3LCJpYXQiOjE3NDE5Njk0OTcsImp0aSI6IjY2MjYyZjlhMGE0NTRjNTJiMmE4NmY5MDQzMDI5OWQxIiwidXNlcl9pZCI6M30.sh8wjtdMgN4hMtrKxWpJMMymyaRpwk9ZVtTLKJOpVWk
 
 {
-    "name": "Black",
-    "color": "Black",
-    "birth_year": 2020
+    "name": "Beluga",
+    "color": "White",
+    "birth_year": 2023
 }
 
 ###
