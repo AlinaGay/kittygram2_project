@@ -1,0 +1,112 @@
+GET http://127.0.0.1:8000/cats/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQyMDU1ODk3LCJpYXQiOjE3NDE5Njk0OTcsImp0aSI6IjY2MjYyZjlhMGE0NTRjNTJiMmE4NmY5MDQzMDI5OWQxIiwidXNlcl9pZCI6M30.sh8wjtdMgN4hMtrKxWpJMMymyaRpwk9ZVtTLKJOpVWk
+
+###
+
+GET http://127.0.0.1:8000/cats/1/
+
+###
+
+GET http://127.0.0.1:8000/users/
+
+###
+
+GET http://127.0.0.1:8000/owners/
+
+###
+
+POST http://127.0.0.1:8000/auth/users/
+Content-Type: application/json
+
+{
+    "username": "user_1",
+    "password": "another123"
+}
+
+###
+
+POST http://127.0.0.1:8000/auth/users/
+Content-Type: application/json
+
+{
+    "username": "user_2",
+    "password": "anothe34563"
+}
+
+###
+
+POST http://127.0.0.1:8000/auth/users/
+Content-Type: application/json
+
+{
+    "username": "user_3",
+    "password": "andfgd563"
+}
+
+###
+
+POST http://127.0.0.1:8000/auth/jwt/create/
+Content-Type: application/json
+
+{
+    "username": "user_3",
+    "password": "andfgd563"
+}
+
+###
+
+POST http://127.0.0.1:8000/owners/
+Content-Type: application/json
+
+{
+    "first_name": "Theodor",
+    "last_name": "Voland"
+}
+
+###
+
+POST http://127.0.0.1:8000/cats/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQyMDU1ODk3LCJpYXQiOjE3NDE5Njk0OTcsImp0aSI6IjY2MjYyZjlhMGE0NTRjNTJiMmE4NmY5MDQzMDI5OWQxIiwidXNlcl9pZCI6M30.sh8wjtdMgN4hMtrKxWpJMMymyaRpwk9ZVtTLKJOpVWk
+
+{
+    "name": "Belka",
+    "color": "White",
+    "birth_year": 2023,
+    "owner": 1,
+    "achievements": [
+        {"achievement_name": "Cought a mouse"}
+    ]
+}
+
+###
+
+POST http://127.0.0.1:8000/cats/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQyMDU1ODk3LCJpYXQiOjE3NDE5Njk0OTcsImp0aSI6IjY2MjYyZjlhMGE0NTRjNTJiMmE4NmY5MDQzMDI5OWQxIiwidXNlcl9pZCI6M30.sh8wjtdMgN4hMtrKxWpJMMymyaRpwk9ZVtTLKJOpVWk
+
+{
+    "name": "Black",
+    "color": "Black",
+    "birth_year": 2020
+}
+
+###
+
+DELETE http://127.0.0.1:8000/cats/14/
+Content-Type: application/json
+
+{
+  }
+
+###
+
+PATCH  http://127.0.0.1:8000/cats/3/
+Content-Type: application/json
+
+{
+    "achievements": [
+        {"achievement_name": "Broke a vase"}
+    ]
+}
